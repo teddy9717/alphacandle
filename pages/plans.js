@@ -1,26 +1,21 @@
+import Navbar from '../components/Navbar';
 
-import Navbar from '../components/Navbar'
-
-export default function Plans() {
+export default function Page() {
   return (
-    <div className="bg-black text-white min-h-screen">
-      <Navbar />
-      <div className="pt-40 px-6 text-center">
-        <h2 className="text-4xl font-bold mb-6">Subscription Plans</h2>
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {[
-            { label: "1 Month", price: "$99" },
-            { label: "3 Months", price: "$249" },
-            { label: "12 Months", price: "$599" }
-          ].map(plan => (
-            <div key={plan.label} className="bg-gray-800 p-6 rounded-xl shadow-md">
-              <h3 className="text-2xl font-semibold mb-2">{plan.label}</h3>
-              <p className="text-xl mb-4">{plan.price}</p>
-              <button className="bg-white text-black py-2 px-4 rounded-full font-semibold hover:bg-gray-300">Subscribe</button>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  )
+    <><Navbar />
+<div className='pt-40 px-6 text-white bg-black min-h-screen text-center'>
+<h2 className='text-3xl font-bold mb-6'>Choose Your Plan</h2>
+<div className='grid md:grid-cols-3 gap-6 max-w-5xl mx-auto'>
+<div className='bg-gray-800 p-6 rounded-xl'>
+<h3 className='text-xl font-semibold'>1 Month</h3><p>$99</p>
+</div>
+<div className='bg-gray-800 p-6 rounded-xl'>
+<h3 className='text-xl font-semibold'>3 Months</h3><p>$249</p>
+</div>
+<div className='bg-gray-800 p-6 rounded-xl'>
+<h3 className='text-xl font-semibold'>12 Months</h3><p>$599</p>
+</div>
+</div>
+</div></>
+  );
 }

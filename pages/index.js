@@ -1,15 +1,12 @@
+import Navbar from '../components/Navbar';
 
-import Navbar from '../components/Navbar'
-
-export default function Home() {
+export default function Page() {
   return (
-    <div className="bg-black text-white min-h-screen">
-      <Navbar />
-      <section className="text-center py-40 px-6">
-        <h1 className="text-5xl font-extrabold tracking-tight mb-4">AlphaCandle</h1>
-        <p className="text-xl mb-6 text-gray-300">Precision Crypto Signals. Global Momentum.</p>
-        <a href="/plans" className="bg-white text-black font-semibold py-3 px-6 rounded-full hover:bg-gray-300 transition">Get Started</a>
-      </section>
-    </div>
-  )
+    <><Navbar />
+<section className='pt-40 text-center text-white bg-black min-h-screen'>
+<h1 className='text-5xl font-bold mb-4'>Trade Smarter with AlphaCandle</h1>
+<p className='text-gray-300 text-lg'>Crypto signals trusted by thousands worldwide.</p>
+<a href='/plans' className='inline-block mt-6 px-6 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-300'>View Plans</a>
+</section></>
+  );
 }
