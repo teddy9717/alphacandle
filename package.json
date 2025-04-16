@@ -2,6 +2,7 @@
 {
   "name": "alphacandle",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,5 +12,10 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24"
   }
 }
