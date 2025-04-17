@@ -1,8 +1,7 @@
 
 {
-  "name": "alphacandle-premium",
+  "name": "alphacandle-deluxe",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
